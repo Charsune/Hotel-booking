@@ -32,7 +32,9 @@
       </div>
     </div>
 
-
+    <!-- 房間列表 -->
+    <!-- html沒有大小寫，所以駱駝命名需要變成這樣 -->
+    <room-list :data="data"></room-list>
   </div>
   
 
@@ -40,9 +42,12 @@
 
 <script>
 
+import RoomList from '@/components/RoomList.vue'
 export default {
   name: 'Home',
-
+  components: { 
+    RoomList
+  },
 
   data() {
     return {
