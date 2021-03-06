@@ -1,8 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
-import VueCarousel from 'vue-carousel'
-Vue.use(VueCarousel)
+import Picker from '@/components/Picker.vue'
 Vue.use(VueRouter)
 
 const routes = [
@@ -10,6 +9,11 @@ const routes = [
     path: '/',
     name: 'Home',
     component: Home
+  },
+  {
+    path: '/Picker',
+    name: 'Picker',
+    component: Picker
   },
   {
     path: '/room/:roomId',
